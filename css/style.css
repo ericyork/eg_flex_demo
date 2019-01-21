@@ -1,43 +1,44 @@
 body {
-  padding: 1em;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
-  border: 3px dotted green;
-  color: #333;
+  padding: 1em; /*-- could be px, %, viewport units, etc. --*/
+  font-family: 'Helvetica Neue', 'Arial', sans-serif; /*--basic font stack--*/
+  border: 3px dotted green; /*-- border shorthand property --*/
+  color: #333; /*-- text color is inherited by child elements --*/
 }
 h2 {
-  font-size: 1.4em;
-  font-weight: 800;
-  margin-top: .5em;
-  margin-bottom: .5em;
-  color: #777;
+  font-size: 1.4em; /*-- gives headings a larger size --*/
+  font-weight: 800; /*-- makes headings boldface--*/
+  margin-top: .5em; /*-- adds space outside the border on the top--*/
+  margin-bottom: .5em; /*-- adds space outside the border on the bottom --*/
+  color: #777; /*-- makes headings a lighter color --*/
 }
 p {
-  margin-bottom: 1em;
+  margin-bottom: 1em; /*-- adds space between multiple paragraphs --*/
 }
 strong {
-  text-transform: uppercase;
+  text-transform: uppercase; /*-- makes bolded items all-caps --*/
 }
 /*-- flex container styles --*/
 .flex-container {/*--container styles --*/
   margin-bottom: 2em;
-  background: #FAFAFA;
-  padding: 1em;
+  background: #FAFAFA; /*-- sets background to light gray --*/
+  padding: 1em; /*-- adds 1em of padding all around --*/
   border: 2px dashed blue;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: no-wrap;
+  display: flex; /*-- sets the display mode--*/
+  flex-direction: row; /*-- sets direction row or column --*/
+  justify-content: space-between; /*-- aligns content on main axis --*/
+  flex-wrap: no-wrap; /*-- determines whether content wraps or not --*/
 }
 .col {/*--common columns styles --*/
   border: 1px solid red;
   background: #FFF;
   padding: .5em;
-  text-align: center;
+  text-align: center; /*-- Aligns only the text --*/
 }
+/*-- flex items --*/
 .left {/*-- styles for first column --*/
-  flex-basis: 20%;
-  flex-grow: 0;
-  order: 0;
+  flex-basis: 20%; /*-- sets the ideal size of the flex item --*/
+  flex-grow: 0; /*-- sets the relative rate at which the item grows --*/
+  order: 0; /*-- sets the order in which the flex item appears --*/
 }
 .center {/*-- styles for second column --*/
   flex-basis: 50%;
@@ -51,14 +52,25 @@ strong {
 }
 /*--block-container styles --*/
 .block-container {
-  display: block;
+  display: block; /*-- sets the display mode to block --*/
   background: #FAFAFA;
   padding: 1em;
   border: 2px dashed purple;
-  width: 50%;
-  margin: .5em auto;
+  width: 50%; /*-- sets the width equal to half the container size --*/
+  margin: .5em auto; /*-- auto equalizes left and right margins --*/
+}
+.first {
+  float: none;
+}
+.second {
+  float: none;
+}
+.clearfix {
+  clear: both; /*--prevents floated elements from escaping their container--*/
 }
 /*-- Media Queries --*/
+/*--only come into effect when screen is less than 768px wide --*/
+/*--
 @media screen and (max-width: 768px) {
   .flex-container {
     flex-direction:column;
@@ -66,4 +78,4 @@ strong {
   .block-container {
     width: 80%;
   }
-}
+}--*/
