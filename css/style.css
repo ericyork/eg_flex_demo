@@ -26,7 +26,7 @@ strong {
   display: flex; /*-- sets the display mode--*/
   flex-direction: row; /*-- sets direction row or column --*/
   justify-content: space-between; /*-- aligns content on main axis --*/
-  flex-wrap: no-wrap; /*-- determines whether content wraps or not --*/
+  flex-wrap: nowrap; /*-- determines whether content wraps or not --*/
 }
 .col {/*--common columns styles --*/
   border: 1px solid red;
