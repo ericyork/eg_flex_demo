@@ -24,11 +24,11 @@ strong {
   background: #FAFAFA; /*-- sets background to light gray --*/
   padding: 1em; /*-- adds 1em of padding all around --*/
   border: 2px dashed blue;
-  display: flex; /*-- sets the display mode--*/
-  flex-direction: row; /*-- sets direction row or column --*/
-  justify-content: space-between; /*-- aligns content on main axis --*/
-  align-items: center; /*-- aligns content on secondary axis --*/
-  flex-wrap: nowrap; /*-- determines whether content wraps or not --*/
+/*display: flex; /*-- sets the display mode--*/
+/*flex-direction: row; /*-- sets direction row or column --*/
+/*justify-content: space-between; /*-- aligns content on main axis --*/
+/*align-items: center; /*-- aligns content on secondary axis --*/
+/*flex-wrap: nowrap; /*-- determines whether content wraps or not --*/
 }
 .col {/*--common columns styles --*/
   border: 1px solid red;
