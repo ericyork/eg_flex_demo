@@ -20,12 +20,14 @@ strong {
 /*-- flex container styles --*/
 .flex-container {/*--container styles --*/
   margin-bottom: 2em;
+  height: 300px; /*-- sets height for demo purposes --*/
   background: #FAFAFA; /*-- sets background to light gray --*/
   padding: 1em; /*-- adds 1em of padding all around --*/
   border: 2px dashed blue;
   display: flex; /*-- sets the display mode--*/
   flex-direction: row; /*-- sets direction row or column --*/
   justify-content: space-between; /*-- aligns content on main axis --*/
+  align-items: center; /*-- aligns content on secondary axis --*/
   flex-wrap: nowrap; /*-- determines whether content wraps or not --*/
 }
 .col {/*--common columns styles --*/
@@ -36,18 +38,24 @@ strong {
 }
 /*-- flex items --*/
 .left {/*-- styles for first column --*/
-  flex-basis: 20%; /*-- sets the ideal size of the flex item --*/
   flex-grow: 0; /*-- sets the relative rate at which the item grows --*/
+  flex-shrink: 1;
+  flex-basis: auto; /*-- sets the ideal size of the flex item --*/
+/*--flex: 0 1 auto; /*-- shorthand for above 3 properties --*/
   order: 0; /*-- sets the order in which the flex item appears --*/
 }
 .center {/*-- styles for second column --*/
-  flex-basis: 50%;
   flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+/*--flex: 0 1 auto; /*-- shorthand for above 3 properties --*/
   order: 0;
 }
 .right {/*-- styles for third column --*/
-  flex-basis: 20%;
   flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+/*--flex: 0 1 auto; /*-- shorthand for above 3 properties --*/
   order: 0;
 }
 /*--block-container styles --*/
