@@ -30,12 +30,6 @@ strong {
   align-items: center; /*-- aligns content on secondary axis --*/
   flex-wrap: nowrap; /*-- determines whether content wraps or not --*/
 }
-.children {/*--common columns styles --*/
-  border: 1px solid red;
-  background: #FFF;
-  padding: .5em;
-  text-align: center; /*-- Aligns only the text --*/
-}
 /*-- flex items --*/
 .left {/*-- styles for first column --*/
   flex-grow: 0; /*-- sets the relative rate at which the item grows --*/
@@ -57,6 +51,12 @@ strong {
   flex-basis: auto;
 /*--flex: 0 1 auto; /*-- shorthand for above 3 properties --*/
   order: 0;
+}
+.children {/*--common columns styles --*/
+  border: 1px solid red;
+  background: #FFF;
+  padding: .5em;
+  text-align: center; /*-- Aligns only the text --*/
 }
 /*--block-container styles --*/
 .block-container {
