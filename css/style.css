@@ -17,13 +17,13 @@ p {
 strong {
   text-transform: uppercase; /*-- makes bolded items all-caps --*/
 }
-/*-- flex container styles --*/
-.parent {/*--container styles --*/
+.parent {/*--flex container styles --*/
   margin-bottom: 2em;
   height: 300px; /*-- sets height for demo purposes --*/
   background: #FAFAFA; /*-- sets background to light gray --*/
   padding: 1em; /*-- adds 1em of padding all around --*/
   border: 2px dashed blue;
+  /*-- change styles below this line --*/
   display: flex; /*-- sets the display mode--*/
   flex-direction: row; /*-- sets direction row or column --*/
   justify-content: space-between; /*-- aligns content on main axis --*/
@@ -33,23 +33,23 @@ strong {
 /*-- flex items --*/
 .left {/*-- styles for first column --*/
   flex-grow: 0; /*-- sets the relative rate at which the item grows --*/
-  flex-shrink: 1;
+  flex-shrink: 1; /*-- sets the relative rate at which the item shrinks --*/
   flex-basis: auto; /*-- sets the ideal size of the flex item --*/
-/*--flex: 0 1 auto; /*-- shorthand for above 3 properties --*/
+/*--flex: 0 1 auto; /*-- shorthand for above 3 properties, use this! --*/
   order: 0; /*-- sets the order in which the flex item appears --*/
 }
 .center {/*-- styles for second column --*/
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
-/*--flex: 0 1 auto; /*-- shorthand for above 3 properties --*/
+/*--flex: 0 1 auto; /*-- shorthand for above 3 properties, use this! --*/
   order: 0;
 }
 .right {/*-- styles for third column --*/
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
-/*--flex: 0 1 auto; /*-- shorthand for above 3 properties --*/
+/*--flex: 0 1 auto; /*-- shorthand for above 3 properties, use this! --*/
   order: 0;
 }
 .children {/*--common columns styles --*/
