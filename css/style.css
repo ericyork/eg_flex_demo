@@ -18,7 +18,7 @@ strong {
   text-transform: uppercase; /*-- makes bolded items all-caps --*/
 }
 /*-- flex container styles --*/
-.flex-container {/*--container styles --*/
+.parent {/*--container styles --*/
   margin-bottom: 2em;
   height: 300px; /*-- sets height for demo purposes --*/
   background: #FAFAFA; /*-- sets background to light gray --*/
@@ -30,7 +30,7 @@ strong {
   align-items: center; /*-- aligns content on secondary axis --*/
   flex-wrap: nowrap; /*-- determines whether content wraps or not --*/
 }
-.col {/*--common columns styles --*/
+.children {/*--common columns styles --*/
   border: 1px solid red;
   background: #FFF;
   padding: .5em;
