@@ -1,4 +1,5 @@
 body {
+  background-color: #DADADA; /*-- when just setting color  --*/
   padding: 1em; /*-- could be px, %, viewport units, etc. --*/
   font-family: 'Helvetica Neue', 'Arial', sans-serif; /*--basic font stack--*/
   border: 3px dotted green; /*-- border shorthand property --*/
@@ -9,7 +10,7 @@ h2 {
   font-weight: 800; /*-- makes headings boldface--*/
   margin-top: .5em; /*-- adds space outside the border on the top--*/
   margin-bottom: .5em; /*-- adds space outside the border on the bottom --*/
-  color: #777; /*-- makes headings a lighter color --*/
+  color: #444; /*-- makes headings a lighter color --*/
 }
 p {
   margin-bottom: 1em; /*-- adds space between multiple paragraphs --*/
@@ -32,6 +33,7 @@ strong {
 }
 /*-- flex items --*/
 .left {/*-- styles for first column --*/
+  background-color: blanchedalmond;
   flex-grow: 0; /*-- sets the relative rate at which the item grows --*/
   flex-shrink: 1; /*-- sets the relative rate at which the item shrinks --*/
   flex-basis: auto; /*-- sets the ideal size of the flex item --*/
@@ -39,6 +41,7 @@ strong {
   order: 0; /*-- sets the order in which the flex item appears --*/
 }
 .center {/*-- styles for second column --*/
+  background-color:azure;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
@@ -46,6 +49,7 @@ strong {
   order: 0;
 }
 .right {/*-- styles for third column --*/
+  background-color:lavender;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
@@ -53,8 +57,7 @@ strong {
   order: 0;
 }
 .children {/*--common columns styles --*/
-  border: 1px solid red;
-  background: #FFF;
+  border: 2px solid red;
   padding: .5em;
   text-align: center; /*-- Aligns only the text --*/
 }
@@ -65,12 +68,14 @@ strong {
   padding: 1em;
   border: 2px dashed purple;
   width: 50%; /*-- sets the width equal to half the container size --*/
-  margin: .5em auto; /*-- auto equalizes left and right margins --*/
+  margin: 1em auto; /*-- auto equalizes left and right margins --*/
 }
 .first {
+  background-color: blanchedalmond;
   float: none;
 }
 .second {
+  background-color:lavender;
   float: none;
 }
 .clearfix {
@@ -80,8 +85,11 @@ strong {
 /*--only come into effect when screen is less than 768px wide --*/
 /*--
 @media screen and (max-width: 768px) {
-  .flex-container {
+  .parent {
     flex-direction:column;
+  }
+  .children {
+    width: 100%;
   }
   .block-container {
     width: 80%;
